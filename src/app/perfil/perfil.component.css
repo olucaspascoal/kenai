@@ -1,0 +1,65 @@
+.perfil{
+    background-color: var(--color-black);
+    min-height: 100vh;
+    width: 100%;
+    color: var(--color-white);
+    font-weight: 300;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.top p{
+    font-size: 1.5rem;
+}
+.perfil-main{
+    text-align: center;
+}
+.perfil-main h1, h3{
+    font-weight: 300;
+}
+
+.perfil-usuarios{
+    display: flex;
+    justify-content: space-around;
+    max-width: 70%;
+    margin: 5rem auto;
+}
+.perfil-usuarios-item{
+    width: 30%;
+}
+.perfil-usuarios-item:hover{
+    cursor: pointer;
+}
+.item-foto{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(225deg, #781FD1 0%, #570EAB 100%);
+    margin: 0 auto;
+}
+.color-2{
+    background: linear-gradient(180deg, #64FA9B 0%, #5FE36A 100%);
+}
+.color-3{
+    background: linear-gradient(180deg, #4DF0F3 0%, #4D7BFD 100%);
+}
+
+.item-nome{
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--color-gray);
+}
+
+.perfil-add{
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    padding: 1rem 2rem;
+    max-width: 10%;
+    margin: 0 auto;
+    text-align: center;
+}
+.perfil-add:hover{
+    cursor: pointer;
+}
