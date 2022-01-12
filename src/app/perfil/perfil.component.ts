@@ -14,9 +14,9 @@ export class PerfilComponent implements OnInit {
     this.hora()
   }
   public hora() {
-    const today=new Date();
-    const h=today.getHours();
-    const m=today.getMinutes();
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
     this.horario = (h+":"+m)
   }
 }

@@ -1,1 +1,50 @@
-<p>home works!</p>
+<div class="home">
+
+        <div class="main">
+
+            <div class="home-menu">
+                <img src="../../assets/logoKenai.svg" alt="Logo Kenai">
+                <div class="home-menu-itens">
+                    <img src="../../assets/search.svg" alt="">
+                    <h3>Início</h3>
+                    <h3>Minha lista</h3>
+                    <img src="../../assets/bell.svg" alt="">
+                    <img src="../../assets/user.svg" alt="">
+                </div>
+            </div>
+            
+            <div class="home-info" *ngFor="let i of principal">
+                <div class="info-tag"> {{i.tipo}} </div>
+                <div class="info-star" >
+                    <div class="info-star-item" *ngFor="let star of ' '.repeat(i.star).split('')">
+                        <img src="../../assets/Star.svg" alt="Estrela">
+                    </div>
+                    <div class="info-star-time"> <img src="../../assets/timer.svg" alt=""> {{i.tempo}} </div>
+                </div>
+                <h1> {{i.nome}} </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis turpis, 
+                    nec rutrum quam vulputate viverra. Proin ornare dolor sit amet laoreet dignissim. 
+                </p>
+                <div class="info-btn">
+                    Assistir agora
+                </div>
+            </div>
+            <!-- <div *ngFor="let item of dados">
+                {{item.nome}}
+            </div> -->
+        </div>
+        <div class="home-filmes">
+            <h2>Populares</h2>
+            <div class="home-filmes-item">
+                <img src="../../assets/shangChi.png" alt="">
+                <img src="../../assets/witcher.png" alt="">
+                <img src="../../assets/wishDragon.png" alt="">
+                <img src="../../assets/spiderMan.png" alt="">
+                <img src="../../assets/loki.png" alt="">
+            </div>
+        </div>
+    <footer>
+        <p>Kenai | Todos os direitos reservados</p>
+    </footer>
+</div>
